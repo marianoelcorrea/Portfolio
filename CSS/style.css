@@ -209,7 +209,7 @@ html {
 /* SECCION HABILIDADES */
 
 .contenedorSkills {
-    background: linear-gradient(aqua, rgba(33, 16, 16, .8)), url("imag...");
+    background: linear-gradient(aqua, rgba(33, 16, 16, .8)), url("../IMG/imgFondo.PNG");
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
@@ -472,6 +472,11 @@ html {
     font-size: 15px;
 }
 
+#contacto .contenedorForm input, 
+#contacto .contenedorForm textarea:focus-visible{
+    outline-color: aqua
+    } 
+
 #contacto .contenedorForm .mitad input {
     width: 48%;
 }
@@ -479,6 +484,11 @@ html {
 #contacto .contenedorForm .inputFull {
     width: 100%;
 }
+
+
+
+
+
 
 #contacto .btnEnviar {
     display: block;
@@ -546,9 +556,6 @@ footer a {
     #sobremi {
         padding: 50px 0;
         display: block;
-    }
-    #sobremi .contenedorFoto {
-       
     }
     #sobremi .contenedorFoto {
         max-width: 200px;
