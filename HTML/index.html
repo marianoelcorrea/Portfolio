@@ -1,221 +1,358 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@200;400;600&family=Rubik&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../CSS/style.css">
-    <title>MNC Personal Portfolio</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=no"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@200;400;600&family=Rubik&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../CSS/style.css" />
+    <title>MNC Portfolio</title>
+  </head>
+  <body>
     <!-- SECCION INICIO -->
     <section id="inicio">
-        <div class="contenido">
-            <header>
-                <div class="contenidoHeader">
-                    <h1>mnc</h1>
-                    <nav id="nav" class="">
-                        <ul id="links">
-                            <li><a href="#inicio" class="seleccionado" onclick="seleccionar(this)">INICIO</a></li>
-                            <li><a href="#sobremi" onclick="seleccionar(this)">SOBRE MI</a></li>
-                            <li><a href="#portfolio" onclick="seleccionar(this)">PORTFOLIO</a></li>
-                            <li><a href="#contacto" onclick="seleccionar(this)">CONTACTO</a></li>
-                        </ul>  
-                    </nav>
+      <div class="contenido">
+        <header>
+          <div class="contenidoHeader">
+            <h1>mnc</h1>
+            <nav id="nav" class="">
+              <ul id="links">
+                <li>
+                  <a
+                    href="#inicio"
+                    class="seleccionado"
+                    onclick="seleccionar(this)"
+                    >INICIO</a
+                  >
+                </li>
+                <li>
+                  <a href="#sobremi" onclick="seleccionar(this)">SOBRE MI</a>
+                </li>
+                <li>
+                  <a href="#portfolio" onclick="seleccionar(this)">PORTFOLIO</a>
+                </li>
+                <li>
+                  <a href="#contacto" onclick="seleccionar(this)">CONTACTO</a>
+                </li>
+              </ul>
+            </nav>
 
-                    <!--ICONOS MENU RESPONSIVE-->
-                    <div id="iconoNav" onclick="responsiveMenu()">
-                        <i class="fa-solid fa-bars"></i>
-                    </div>
-                    <!-- ICONOS REDES -->
-                    <div class="redes">
-                        <a href="https://www.linkedin.com/in/maria-noel-correa/"><i class="fa-brands fa-linkedin"></i></a>
-                        <a href="https://github.com/marianoelcorrea"><i class="fa-brands fa-square-github"></i></a>
-                        <a href="https://www.instagram.com/marianoel.correa/"><i class="fa-brands fa-square-instagram"></i></a>           
-                    </div>
-                </div>
-            </header>
-            <div class="presentacion">
-                <p class="bienvenida">Bienvenidos</p>
-                <h2>Soy <span>María Noel Correa</span> <br> Desarrolladora Web Junior</h2>
-                <p class="descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi ad ipsa atque vitae unde asperiores corporis laborum a dolore.</p>
-                <a href="#portfolio">Ir a Portafolio</a>
+            <!--ICONOS MENU RESPONSIVE-->
+            <div id="iconoNav" onclick="responsiveMenu()">
+              <i class="fa-solid fa-bars"></i>
             </div>
+            <!-- ICONOS REDES -->
+            <div class="redes">
+              <a href="https://www.linkedin.com/in/maria-noel-correa/"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+              <a href="https://github.com/marianoelcorrea"
+                ><i class="fa-brands fa-square-github"></i
+              ></a>
+              <a href="https://www.instagram.com/marianoel.correa/"
+                ><i class="fa-brands fa-square-instagram"></i
+              ></a>
+            </div>
+          </div>
+        </header>
+        <div class="presentacion">
+          <p class="bienvenida">Bienvenidos</p>
+          <h2>
+            Soy <span>María Noel Correa</span> <br />
+            Desarrolladora Web Junior
+          </h2>
+          <p class="descripcion">
+            <span class="textoDecorado">if ( </span>
+            <span class="textoDecoradoIfElse"> primerExperienciaLaboral</span>
+            <span class="textoDecorado">) { </span> <br />
+            <br />
+            <span class="textoReturn"> "¡Excelente!"; </span> <br />
+            <br />
+            <span class="textoDecorado"> } else { </span>
+            <br />
+            <br />
+            <span class="textoReturn">¡Dame una oportunidad!";</span> <br />
+            <br />
+            <span class="textoDecorado"> } </span>
+          </p>
+          <a href="#portfolio">Ir a Portafolio</a>
         </div>
+      </div>
     </section>
 
     <!--SECCION SOBRE MI-->
     <section id="sobremi">
-        <div class="contenedorFoto">
-            <img src="../IMG/myAvatarImg.png" alt="">
-        </div>
-        <div class="sobremi">
-            <p class="tituloSeccion">Sobre Mi</p>
-            <h2>Hola, soy <span>María Noel Correa</span></h2>
-            <h3>Desarrolladora Web Junior</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, quia quibusdam? Id aliquam quis obcaecati omnis atque facilis commodi, praesentium provident, optio iure odio dolorum reiciendis? Necessitatibus molestias dolores ab!</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
-            <a href="#">Descargar CV</a>
+      <div class="contenedorFoto">
+        <img src="../IMG/myFoto.jpeg" alt="" />
+      </div>
+      <div class="sobremi">
+        <p class="tituloSeccion">Sobre Mi</p>
+        <h2>Hola, soy <span>María Noel Correa</span></h2>
+        <h3>Desarrolladora Web Junior</h3>
+        <p>
+          Anteriormente, estudié Administración de Empresas en la Factulad de
+          Ciencias Economicas y de Administración, pero recientemente decidí
+          realizar una reconversion profesional, eligiendo estudiar
+          <span class="textoResaltado">Desarrollo de Software.</span> En 2022,
+          tuve la oportunidad de participar en un curso de Desarrollo Web
+          FrontEnd en el programa "Jóvenes a Programar" de Ceibal. Durante este
+          curso, adquirí conocimientos en tecnologías como
+          <b>JavaScript, HTML, CSS, Bootstrap </b> y las bases básicas de
+          BackEnd. Como proyecto final, creé una página de E-commerce, lo cual
+          me permitió aplicar mis habilidades adquiridas en un contexto real.
+          <br />
+          <br />
+          Motivada por el deseo de continuar aprendiendo, en febrero de 2023
+          decidí realizar un
+          <b
+            >bootcamp intensivo de 3 meses en Senpai Academy para convertirme en
+            una desarrolladora web Full Stack.</b
+          >
+          Durante este programa, me sumergí nuevamente en <b>JavaScript</b>,
+          <b>HTML</b> y <b>CSS </b> y también tuve la oportunidad de aprender
+          nuevas tecnologías como <b>React.js</b>, <b>Node.js</b>,
+          <b>Express.js </b>y <b>Base de Datos</b>. Además de las habilidades
+          técnicas, el bootcamp me brindó la oportunidad de seguir desarrollando
+          mis habilidades blandas, como la organización y el trabajo en equipo.
+          A lo largo de estos 3 meses trabajé en equipos, siguiendo la
+          metodología de trabajo en sprint, simualndo un entorno laboral.
+          <br />
+          <br />
+          Mi proyecto final de este curso fue el desarrollo de una aplicación
+          mobile llamada "Cupido Musical". Esta aplicación permite encontrar
+          música que se ajuste a tu estado de ánimo, creando coincidencias
+          musicales personalizadas. Fue un desafío emocionante y me permitió
+          aplicar mis conocimientos y habilidades de programación en un proyecto
+          significativo junto a mis compañeros de equipo.
+          <br />
+          <br />
+          Actualmente, continúo estudiando de forma autodidacta y practicando
+          todo lo aprendido desarrollando proyectos personales para enriquecer
+          mi portafolio. Estoy entusiasmada y comprometida con seguir creciendo
+          en el rubro.
+          <br />
+          <br />
+          <span class="textoResaltado">
+            En este momento, estoy buscando mi primera experiencia laboral en el
+            área de TI. Estoy lista para aplicar mis conocimientos y habilidades
+            en un entorno profesional y contribuir de manera significativa a un
+            equipo de trabajo.</span
+          >
 
-        </div>
+          <br />
+          <br />
+          <span class="textoContacto"
+            >¡Si estás interesado en colaborar o conocer más sobre mi trabajo,
+            no dudes en conctactarme!</span
+          >
+        </p>
+
+        <a
+          href="../IMG/webDevMariaNoelCorrea_es.pdf"
+          download="CV_MariaNoelCorrea"
+          >Descargar CV</a
+        >
+      </div>
     </section>
 
     <!-- SECCION HABILIDADES -->
     <div class="contenedorSkills" id="skills">
-        <h3>HABILIDADES</h3>
-        <div class="skills">
-            <div class="info">
-                <p><span class="lista"></span>HTML</p>
-                <span class="porcentaje">85%</span>
-            </div>
-            <div class="barra">
-                <div id="html" class="barraProgreso1"></div>
-            </div>
+      <h3>HABILIDADES</h3>
+      <div class="skills">
+        <div class="info">
+          <p><span class="lista"></span>HTML</p>
+          <span class="porcentaje">85%</span>
         </div>
+        <div class="barra">
+          <div id="html"></div>
+        </div>
+      </div>
 
-        <div class="skills">
-            <div class="info">
-                <p><span class="lista"></span>CSS</p>
-                <span class="porcentaje">85%</span>
-            </div>
-            <div class="barra">
-                <div id="css" class="barraProgreso2"></div>
-            </div>
+      <div class="skills">
+        <div class="info">
+          <p><span class="lista"></span>CSS</p>
+          <span class="porcentaje">85%</span>
         </div>
+        <div class="barra">
+          <div id="css"></div>
+        </div>
+      </div>
 
-        <div class="skills">
-            <div class="info">
-                <p><span class="lista"></span>Javascript</p>
-                <span class="porcentaje">80%</span>
-            </div>
-            <div class="barra">
-                <div id="js" class="barraProgreso3"></div>
-            </div>
+      <div class="skills">
+        <div class="info">
+          <p><span class="lista"></span>Javascript</p>
+          <span class="porcentaje">80%</span>
         </div>
+        <div class="barra">
+          <div id="js"></div>
+        </div>
+      </div>
 
-        <div class="skills">
-            <div class="info">
-                <p><span class="lista"></span>React.js</p>
-                <span class="porcentaje">80%</span>
-            </div>
-            <div class="barra">
-                <div id="react" class="barraProgreso4"></div>
-            </div>
+      <div class="skills">
+        <div class="info">
+          <p><span class="lista"></span>React.js</p>
+          <span class="porcentaje">80%</span>
         </div>
+        <div class="barra">
+          <div id="react"></div>
+        </div>
+      </div>
 
-        <div class="skills">
-            <div class="info">
-                <p><span class="lista"></span>Bootstrap</p>
-                <span class="porcentaje">75%</span>
-            </div>
-            <div class="barra">
-                <div id="bootstrap" class="barraProgreso5"></div>
-            </div>
+      <div class="skills">
+        <div class="info">
+          <p><span class="lista"></span>Bootstrap</p>
+          <span class="porcentaje">75%</span>
         </div>
+        <div class="barra">
+          <div id="bootstrap"></div>
+        </div>
+      </div>
 
-        <div class="skills">
-            <div class="info">
-                <p><span class="lista"></span>Node.js</p>
-                <span class="porcentaje">75%</span>
-            </div>
-            <div class="barra">
-                <div id="node" class="barraProgreso6"></div>
-            </div>
+      <div class="skills">
+        <div class="info">
+          <p><span class="lista"></span>Node.js</p>
+          <span class="porcentaje">75%</span>
         </div>
-   
-        <div class="skills">
-            <div class="info">
-                <p><span class="lista"></span>Express.js</p>
-                <span class="porcentaje">70%</span>
-            </div>
-            <div class="barra">
-                <div id="express" class="barraProgreso7"></div>
-            </div>
+        <div class="barra">
+          <div id="node"></div>
         </div>
+      </div>
 
-        <div class="skills">
-            <div class="info">
-                <p><span class="lista"></span>Base de Datos</p>
-                <span class="porcentaje">70%</span>
-            </div>
-            <div class="barra">
-                <div id="baseDatos" class="barraProgreso8"></div>
-            </div>
+      <div class="skills">
+        <div class="info">
+          <p><span class="lista"></span>Express.js</p>
+          <span class="porcentaje">70%</span>
         </div>
+        <div class="barra">
+          <div id="express"></div>
+        </div>
+      </div>
 
+      <div class="skills">
+        <div class="info">
+          <p><span class="lista"></span>Base de Datos</p>
+          <span class="porcentaje">70%</span>
+        </div>
+        <div class="barra">
+          <div id="baseDatos"></div>
+        </div>
+      </div>
     </div>
 
     <!-- SECCION PORTFOLIO -->
     <section id="portfolio">
-        <h3 class="tituloSeccion">MIS PROYECTOS</h3>
-        <div class="filas">
-            <div class="proyecto">
-                <div class="overlay"></div>
-                <img src="../IMG/myAvatarImg.png" alt="">
-                <div class="info">
-                    <h4>Descripción del Proyecto</h4>
-                    <p>Diseño Web</p>
-                </div>
-            </div>
-
-            <div class="proyecto">
-                <div class="overlay"></div>
-                <img src="../IMG/myAvatarImg.png" alt="">
-                <div class="info">
-                    <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias eveniet iusto quae ea ullam quod voluptate laboriosam nemo porro. Alias nam non nulla. Velit fugiat, quam ad libero id consequatur./h4>
-                    <p>Diseño Web</p>
-                </div>
-            </div>
-
-            <div class="proyecto">
-                <div class="overlay"></div>
-                <img src="../IMG/myAvatarImg.png" alt="">
-                <div class="info">
-                    <h4>Descripción del Proyecto</h4>
-                    <p>Diseño Web</p>
-                </div>
-            </div>
-
+      <h3 class="tituloSeccion">MIS PROYECTOS</h3>
+      <div class="filas">
+        <div class="proyecto">
+          <div class="overlay"></div>
+          <img src="../IMG/proyectoJap.png" alt="" />
+          <div class="info">
+            <h4><b>E-commerce</b></h4>
+            <p>
+              Este proyecto de desarrollo web de un e-commerce involucró la
+              creación de una página de inicio de sesión, categorías con reseñas
+              de productos, un perfil con datos de inicio de sesión y foto, un
+              carrito de compras y un botón de cierre de sesión. Fue una
+              experiencia enriquecedora que me permitió aplicar y desarrollar
+              mis habilidades en desarrollo web, creando una plataforma completa
+              y funcional para facilitar las compras en línea.
+            </p>
+          </div>
         </div>
+
+        <div class="proyecto">
+          <div class="overlay"></div>
+          <img src="../IMG/ProyectoSenpai.PNG" alt="" />
+          <div class="info">
+            <h4><b>Cupido Musical</b></h4>
+            <p>
+              Este proyecto se basa en la creación de una aplicación mobile que
+              te permite generar playlists personalizadas según tu estado de
+              ánimo, conectarte con amigos en línea, tener un perfil
+              personalizado y disfrutar de una experiencia musical social y
+              emocionante. Además, la aplicación prioriza la seguridad y
+              protección de tus datos personales mediante una página de inicio
+              de sesión segura.
+            </p>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- SECCION CONTACTO -->
     <section id="contacto">
-        <h3 class="tituloSeccion">CONTACTO</h3>
-        <div class="contenedorForm">
-            <form action="">
-                <div class="filas mitad">
-                    <input type="text" placeholder="Nombre Completo" class="inputMitad">
-                    <input type="text" placeholder="Dirección de Email" class="inputMitad">
-                </div>
-                <div class="filas">
-                    <input type="text" placeholder="Asunto" class="inputFull">
-                </div>
-                <div class="filas">
-                    <textarea name="" id="" cols="30" rows="10" placeholder="Escribe aquí tu mensaje..." class="inputFull"></textarea>
-                </div>
+      <h3 class="tituloSeccion">CONTACTO</h3>
+      <div class="contenedorForm">
+        <form action="">
+          <div class="filas mitad">
+            <input
+              type="text"
+              placeholder="Nombre Completo"
+              id="nombre"
+              class="inputMitad"
+            />
+            <input
+              type="text"
+              placeholder="Dirección de Email"
+              id="email"
+              class="inputMitad"
+            />
+          </div>
+          <div class="filas">
+            <input
+              type="text"
+              placeholder="Asunto"
+              id="asunto"
+              class="inputFull"
+            />
+          </div>
+          <div class="filas">
+            <textarea
+              name=""
+              id="mensaje"
+              cols="30"
+              rows="10"
+              placeholder="Escribe aquí tu mensaje..."
+              class="inputFull"
+            ></textarea>
+          </div>
 
-                <input type="submit" value="Enviar mensaje" class="btnEnviar">
-
-            </form>
-        </div>
+          <input type="submit" value="Enviar mensaje" class="btnEnviar" />
+        </form>
+      </div>
     </section>
 
     <!--SECCION FOOTER -->
     <footer>
-        <div class="redes">
-            <p>María Noel Correa </p>
-            <a href="https://www.linkedin.com/in/maria-noel-correa/"><i class="fa-brands fa-linkedin"></i></a>
-            <a href="https://github.com/marianoelcorrea"><i class="fa-brands fa-square-github"></i></a>
-            <a href="https://www.instagram.com/marianoel.correa/"><i class="fa-brands fa-square-instagram"></i></a>
-                      
-        </div>
+      <div class="redes">
+        <p>María Noel Correa</p>
+        <a href="https://www.linkedin.com/in/maria-noel-correa/"
+          ><i class="fa-brands fa-linkedin"></i
+        ></a>
+        <a href="https://github.com/marianoelcorrea"
+          ><i class="fa-brands fa-square-github"></i
+        ></a>
+        <a href="https://www.instagram.com/marianoel.correa/"
+          ><i class="fa-brands fa-square-instagram"></i
+        ></a>
+      </div>
     </footer>
 
     <script src="../JS/script.js"></script>
-</body>
+  </body>
 </html>
