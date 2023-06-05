@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,17 +18,17 @@
             <header>
                 <div class="contenidoHeader">
                     <h1>mnc</h1>
-                    <nav id="nav" class="navBar">
+                    <nav id="nav" class="">
                         <ul id="links">
-                            <li><a href="#inicio" class="seleccionado">INICIO</a></li>
-                            <li><a href="#sobremi">SOBRE MI</a></li>
-                            <li><a href="#portfolio">PORTFOLIO</a></li>
-                            <li><a href="#contacto">CONTACTO</a></li>
+                            <li><a href="#inicio" class="seleccionado" onclick="seleccionar(this)">INICIO</a></li>
+                            <li><a href="#sobremi" onclick="seleccionar(this)">SOBRE MI</a></li>
+                            <li><a href="#portfolio" onclick="seleccionar(this)">PORTFOLIO</a></li>
+                            <li><a href="#contacto" onclick="seleccionar(this)">CONTACTO</a></li>
                         </ul>  
                     </nav>
 
-                    <!--ICONOS MENU-->
-                    <div id="iconoNav">
+                    <!--ICONOS MENU RESPONSIVE-->
+                    <div id="iconoNav" onclick="responsiveMenu()">
                         <i class="fa-solid fa-bars"></i>
                     </div>
                     <!-- ICONOS REDES -->
@@ -63,5 +63,158 @@
 
         </div>
     </section>
+
+    <!-- SECCION HABILIDADES -->
+    <div class="contenedorSkills" id="skills">
+        <h3>HABILIDADES</h3>
+        <div class="skills">
+            <div class="info">
+                <p><span class="lista"></span>HTML</p>
+                <span class="porcentaje">85%</span>
+            </div>
+            <div class="barra">
+                <div id="html" class="barraProgreso1"></div>
+            </div>
+        </div>
+
+        <div class="skills">
+            <div class="info">
+                <p><span class="lista"></span>CSS</p>
+                <span class="porcentaje">85%</span>
+            </div>
+            <div class="barra">
+                <div id="css" class="barraProgreso2"></div>
+            </div>
+        </div>
+
+        <div class="skills">
+            <div class="info">
+                <p><span class="lista"></span>Javascript</p>
+                <span class="porcentaje">80%</span>
+            </div>
+            <div class="barra">
+                <div id="js" class="barraProgreso3"></div>
+            </div>
+        </div>
+
+        <div class="skills">
+            <div class="info">
+                <p><span class="lista"></span>React.js</p>
+                <span class="porcentaje">80%</span>
+            </div>
+            <div class="barra">
+                <div id="react" class="barraProgreso4"></div>
+            </div>
+        </div>
+
+        <div class="skills">
+            <div class="info">
+                <p><span class="lista"></span>Bootstrap</p>
+                <span class="porcentaje">75%</span>
+            </div>
+            <div class="barra">
+                <div id="bootstrap" class="barraProgreso5"></div>
+            </div>
+        </div>
+
+        <div class="skills">
+            <div class="info">
+                <p><span class="lista"></span>Node.js</p>
+                <span class="porcentaje">75%</span>
+            </div>
+            <div class="barra">
+                <div id="node" class="barraProgreso6"></div>
+            </div>
+        </div>
+   
+        <div class="skills">
+            <div class="info">
+                <p><span class="lista"></span>Express.js</p>
+                <span class="porcentaje">70%</span>
+            </div>
+            <div class="barra">
+                <div id="express" class="barraProgreso7"></div>
+            </div>
+        </div>
+
+        <div class="skills">
+            <div class="info">
+                <p><span class="lista"></span>Base de Datos</p>
+                <span class="porcentaje">70%</span>
+            </div>
+            <div class="barra">
+                <div id="baseDatos" class="barraProgreso8"></div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- SECCION PORTFOLIO -->
+    <section id="portfolio">
+        <h3 class="tituloSeccion">MIS PROYECTOS</h3>
+        <div class="filas">
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="../IMG/myAvatarImg.png" alt="">
+                <div class="info">
+                    <h4>Descripción del Proyecto</h4>
+                    <p>Diseño Web</p>
+                </div>
+            </div>
+
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="../IMG/myAvatarImg.png" alt="">
+                <div class="info">
+                    <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias eveniet iusto quae ea ullam quod voluptate laboriosam nemo porro. Alias nam non nulla. Velit fugiat, quam ad libero id consequatur./h4>
+                    <p>Diseño Web</p>
+                </div>
+            </div>
+
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="../IMG/myAvatarImg.png" alt="">
+                <div class="info">
+                    <h4>Descripción del Proyecto</h4>
+                    <p>Diseño Web</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SECCION CONTACTO -->
+    <section id="contacto">
+        <h3 class="tituloSeccion">CONTACTO</h3>
+        <div class="contenedorForm">
+            <form action="">
+                <div class="filas mitad">
+                    <input type="text" placeholder="Nombre Completo" class="inputMitad">
+                    <input type="text" placeholder="Dirección de Email" class="inputMitad">
+                </div>
+                <div class="filas">
+                    <input type="text" placeholder="Asunto" class="inputFull">
+                </div>
+                <div class="filas">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Escribe aquí tu mensaje..." class="inputFull"></textarea>
+                </div>
+
+                <input type="submit" value="Enviar mensaje" class="btnEnviar">
+
+            </form>
+        </div>
+    </section>
+
+    <!--SECCION FOOTER -->
+    <footer>
+        <div class="redes">
+            <p>María Noel Correa </p>
+            <a href="https://www.linkedin.com/in/mar%C3%ADa-noel-correa-/"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>            
+        </div>
+    </footer>
+
+    <script src="../JS/script.js"></script>
 </body>
 </html>
