@@ -551,6 +551,9 @@ footer a {
   .redes {
     display: none;
   }
+  .redesFooter {
+    display: block;
+  }
   nav {
     display: none;
   }
